@@ -1,0 +1,139 @@
+* { margin: 0; padding: 0; }
+.slider {
+    display: flex;
+    height: 293px;
+    width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.slider li {
+    list-style: none;
+    position: absolute;
+}
+body{
+    background-color:black;
+}
+header{
+    background-color: azure;
+}
+.primeira_barra_menu{
+    display: flex;
+    justify-content: space-between;
+}
+footer{
+    background-color: azure;
+    width: 100%;
+    bottom: 0;
+    
+}
+.rodape{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slider img {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+    max-width: 220px;
+    max-height: 500px;
+}
+.slider input {
+    display: none;
+}
+.slider label {
+    background-color: blue;
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    z-index: 10;
+}
+
+.slider li:nth-child(1) label {
+    left: 10px;
+}
+
+.slider li:nth-child(2) label {
+    left: 40px;
+}
+
+.slider li:nth-child(3) label {
+    left: 70px;
+}
+.slider img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slider li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+h1{
+    display: none;
+}
+h2{
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.Icones_barra{
+    margin-top: 5px;
+}
+.Icones_barra :nth-child(1){
+    max-width: 40px;
+    max-height: 40px;
+}
+.Icones_barra :nth-child(2){
+    max-width: 40px;
+    max-height: 40px;
+}
+.logo :nth-child(1){
+    max-width: 100px;
+    max-height: 50px;
+    margin-top: 3px;
+    margin-left: 5px;
+}
+.Barra_pesquisa{
+    display: inline-block;
+    margin-top: 13px;
+}
+.Barra_de_navegar{
+    background-color:cornflowerblue;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    display: flex;
+    width: auto;
+}
+.produtos{
+    display: inline-block;
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.produto{
+    background-color:darkgrey;
+    border-radius: 2px;
+    padding: 3px;
+    text-align: center;
+}
+
+
